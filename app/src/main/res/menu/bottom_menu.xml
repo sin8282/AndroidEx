@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_airplane"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        android:title="비행기"/>
+    <item android:id="@+id/action_bus"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_airport_shuttle_24"
+        android:title="버스"/>
+    <item android:id="@+id/action_workload"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_assured_workload_24"
+        android:title="건물"/>
+
+</menu>

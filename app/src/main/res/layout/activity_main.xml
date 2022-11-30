@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    android:scrollbarFadeDuration="0"
+    android:scrollbarSize="5dp"
+    android:scrollbarThumbVertical="@android:color/darker_gray"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="아이디를 입력하세요" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="onClick 연습"/>
+
+            <Button
+                android:id="@+id/intentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="intent 연습"/>
+
+            <Button
+                android:id="@+id/listItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List 연습"
+                />
+
+            <Button
+                android:id="@+id/navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Navi 연습"
+                />
+
+            <Button
+                android:id="@+id/shared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shared 연습"
+                />
+
+            <Button
+                android:id="@+id/webView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="naver열기"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera"
+                android:text="카메라 컨트롤"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycle_btn"
+                android:text="리사이클 리스트"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_btn"
+                android:text="프레이그먼트"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thread_btn"
+                android:text="쓰레드 테스트"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_btn"
+                android:text="다이얼 로그"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service_btn"
+                android:text="서비스 백그라운드"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/record_btn"
+                android:text="동영상 레코더"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/push_btn"
+                android:text="push알림"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_btn"
+                android:text="스피너, 어코디언"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/musicplayer_btn"
+                android:text="뮤직플레이어"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/goBack_btn"
+                android:text="고 back 버튼"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomNavi"
+                android:text="바텀네비"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/googleMap"
+                android:text="구글맵 연동"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saf"
+                android:text="자식창에 입력자료를 부모로 보내기."/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selector_btn"
+                android:text="이미지 셀렉터"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LoginTest"
+                android:text="로그인기능 테스트"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/broadcast_btn"
+                android:text="상태값 체크하기(네퉉,배터리량 등등)"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/videoview_btn"
+                android:text="비디오 뷰"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firebaseListExample"
+                android:text="Firebase db연동 값불러오기"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewPagerEx"
+                android:text="뷰페이저"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxEx"
+                android:text="체크박스"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioBoxEx"
+                android:text="라디오박스"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutEx"
+                android:text="리니어 레이아웃"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutEx"
+                android:text="렐러티브 레이아웃"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/constraintLayoutEx"
+                android:text="컨스트레인트 레이아웃"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구글 로그인 연동"
+                android:id="@+id/googleLoginEx"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayoutEx"
+                android:text="테이블레이아웃"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmentBundleEx"
+                android:text="프레이그먼트 번들"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""/>
+
+<!--            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/iv"
+                />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

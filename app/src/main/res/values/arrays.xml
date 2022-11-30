@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>혁</item>
+        <item>순</item>
+        <item>황</item>
+        <item>오</item>
+        <item>영</item>
+        <item>균</item>
+    </string-array>
+</resources>
