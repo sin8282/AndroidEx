@@ -231,6 +231,31 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/cardViewEx"
+                android:text="카드뷰 및 foreground"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewBindingEx"
+                android:text="뷰바인딩"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
                 android:text=""/>
 

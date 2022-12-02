@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FrameLayoutEx">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:text="1층레이아웃"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:layout_gravity="bottom"
+            android:text="2층레이아웃"/>
+
+    </FrameLayout>
+<!--
+텍스트 뷰와 이미지뷰를 리니어레이아웃 안에다가 넣으면
+이미지뷰가 꽉차있어서 텍스트뷰는 밀리게 되어있다
+그럴때 프레임 레이아웃을 이용한다.
+프레임 레이아웃을 한장씩 깔기 때문에 textView가 먼저선언되면 또안보이게 된다.
+-->
+
+</LinearLayout>

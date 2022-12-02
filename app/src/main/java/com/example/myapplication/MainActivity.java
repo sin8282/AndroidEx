@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
     private Button googleLoginEx;
     private Button tableLayoutEx;
     private Button fragmentBundleEx;
+    private Button CardViewEx;
+    private Button ViewBindingEx;
 
 // git 테스트
     @Override
@@ -103,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
         googleLoginEx = findViewById(R.id.googleLoginEx); // 구글로그인 서비스를 테스트한다. 서비스는 파이어베이스 콘솔에서 작업하며, 디펜던시와 json파일을 등록하고 Authentication 탭에서 사용권한을 사용으로 해야 작동한다.
         tableLayoutEx = findViewById(R.id.tableLayoutEx); // 테이블을 생성해보는 예제
         fragmentBundleEx = findViewById(R.id.fragmentBundleEx); // 프레이그먼트간에 화면 움직임없이 번들로 넘기는 방법
+        CardViewEx = findViewById(R.id.cardViewEx);
+        ViewBindingEx = findViewById(R.id.viewBindingEx);
 
         btn.setOnClickListener(new OnClickListener() {
             @Override
@@ -384,6 +388,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, FragmentBundleEx.class);
+                startActivity(intent);
+            }
+        });
+
+        CardViewEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CardViewEx.class);
+                startActivity(intent);
+            }
+        });
+
+        ViewBindingEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ViewBindingEx.class);
                 startActivity(intent);
             }
         });

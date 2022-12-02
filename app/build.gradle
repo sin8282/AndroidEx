@@ -29,6 +29,10 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    viewBinding{
+        enabled = true
+    }
 }
 
 dependencies {
@@ -56,6 +60,7 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.1' //로그인관련 데이터 넘기고 받는...
     implementation ("com.github.bumptech.glide:glide:4.14.2") // glide 이미지를 부드럽게 로딩해주는 라이브러리
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2' // glide는 이것까지 적용해야 사용가능
+    implementation 'androidx.cardview:cardview:1.0.0' // 카드뷰
 
 
 }
