@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
+        android:name=".KakaoCustomApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,6 +22,56 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".RFARSubActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegisterForActivityResult"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RoomDatabaseEx"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".KakaoLoginSucsses"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".KakaoLoginEx"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LifeCycleSubEx"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LifeCycleEx"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".ViewBindingEx"
             android:exported="false">
@@ -337,6 +388,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA6QFOK2yWRnHNsrlGPmbrfa-1920j3ncM" />
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="c0aff8992c5a4618f79b5290c98bacd9" />
     </application>
 
 </manifest>

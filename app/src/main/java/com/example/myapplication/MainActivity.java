@@ -61,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
     private Button fragmentBundleEx;
     private Button CardViewEx;
     private Button ViewBindingEx;
+    private Button LifeCycleEx;
+    private Button KakaoLoginEx;
+    private Button RoomDatabaseEx;
+    private Button RegisterForActivityResult;
 
 // git 테스트
     @Override
@@ -106,7 +110,11 @@ public class MainActivity extends AppCompatActivity {
         tableLayoutEx = findViewById(R.id.tableLayoutEx); // 테이블을 생성해보는 예제
         fragmentBundleEx = findViewById(R.id.fragmentBundleEx); // 프레이그먼트간에 화면 움직임없이 번들로 넘기는 방법
         CardViewEx = findViewById(R.id.cardViewEx);
-        ViewBindingEx = findViewById(R.id.viewBindingEx);
+        ViewBindingEx = findViewById(R.id.viewBindingEx); // <<findViewById를 사용하여 매번 선언하는 과정을 ViewBinding을 통해 한번에 해결가능해진다. 개편함.
+        LifeCycleEx = findViewById(R.id.lifeCycleEx); // 안드로이드에 기본이 되는 라이프사이클을 확인해볼수있다.
+        KakaoLoginEx = findViewById(R.id.KakaoLoginEx); // 카카오 로그인
+        RoomDatabaseEx = findViewById(R.id.RoomDatabaseEx); // 내부데이터베이스 사용하는법
+        RegisterForActivityResult = findViewById(R.id.RegisterForActivityResult);
 
         btn.setOnClickListener(new OnClickListener() {
             @Override
@@ -404,6 +412,46 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ViewBindingEx.class);
+                startActivity(intent);
+            }
+        });
+
+        LifeCycleEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LifeCycleEx.class);
+                startActivity(intent);
+            }
+        });
+
+        LifeCycleEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LifeCycleEx.class);
+                startActivity(intent);
+            }
+        });
+
+        KakaoLoginEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, KakaoLoginEx.class);
+                startActivity(intent);
+            }
+        });
+
+        RoomDatabaseEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RoomDatabaseEx.class);
+                startActivity(intent);
+            }
+        });
+
+        RegisterForActivityResult.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RegisterForActivityResult.class);
                 startActivity(intent);
             }
         });

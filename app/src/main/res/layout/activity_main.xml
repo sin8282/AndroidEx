@@ -241,23 +241,23 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text=""/>
+                android:id="@+id/lifeCycleEx"
+                android:text="라이프사이클 테스트"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text=""/>
+                android:id="@+id/RoomDatabaseEx"
+                android:text="내부DB ROOMDATABASE"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text=""/>
+                android:id="@+id/KakaoLoginEx"
+                android:text="카카오 로그인"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text=""/>
+                android:id="@+id/RegisterForActivityResult"
+                android:text="자식에서 부모로 값넘기기 최신 버전 RegisterForActivityResult"/>
 
 <!--            <ImageView
                 android:layout_width="100dp"
