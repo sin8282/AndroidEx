@@ -259,6 +259,12 @@
                 android:id="@+id/RegisterForActivityResult"
                 android:text="자식에서 부모로 값넘기기 최신 버전 RegisterForActivityResult"/>
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RxjavaEx"
+                android:text="자식에서 부모로 값넘기기 최신 버전 RegisterForActivityResult"/>
+
 <!--            <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"

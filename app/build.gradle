@@ -36,7 +36,14 @@ android {
 }
 
 dependencies {
-
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
     implementation 'androidx.appcompat:appcompat:1.4.1' //material와 호환이 되는 버전을 맞춰줘야한다. 자세한건 배포하는 git사이트에 상세히 나와있다.
     implementation 'com.google.android.material:material:1.7.0-alpha03' // appcompat와 호환이 되는 버전을 맞춰줘야한다. 자세한건 배포하는 git사이트에 상세히 나와있다
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
@@ -64,6 +71,8 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0' // 카드뷰
     implementation 'com.kakao.sdk:usermgmt:1.30.7'
     annotationProcessor 'androidx.room:room-compiler:2.4.2'// 카카오톡 로그인
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'//rxJava 비동기쓰레드
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.7'//rxJava 비동기쓰레드
 
 
 }

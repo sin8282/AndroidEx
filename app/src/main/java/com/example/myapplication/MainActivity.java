@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private Button KakaoLoginEx;
     private Button RoomDatabaseEx;
     private Button RegisterForActivityResult;
+    private Button RxjavaEx;
 
 // git 테스트
     @Override
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
         KakaoLoginEx = findViewById(R.id.KakaoLoginEx); // 카카오 로그인
         RoomDatabaseEx = findViewById(R.id.RoomDatabaseEx); // 내부데이터베이스 사용하는법
         RegisterForActivityResult = findViewById(R.id.RegisterForActivityResult);
+        RxjavaEx = findViewById(R.id.RxjavaEx); // Rxjava 사용법 (비동기 서비스 작업)
 
         btn.setOnClickListener(new OnClickListener() {
             @Override
@@ -452,6 +454,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RegisterForActivityResult.class);
+                startActivity(intent);
+            }
+        });
+
+        RxjavaEx.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, rxJavaEx.class);
                 startActivity(intent);
             }
         });
